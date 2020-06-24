@@ -1,3 +1,31 @@
+# ETAPAS DA REALIZAÇÃO DO PROJETO
+1 - Dados importados para o Postgre
+
+2 - Criação da view :
+create view 
+tableauview as 
+select aka_title.title as titulo, aka_title.movie_id as id_filme,
+company_name.id as id_empresa, company_name.name as nome_empresa,
+company_type.kind as tipo_empresa,
+kind_type.kind as genero, aka_title.production_year as ano, 
+company_name.country_code as pais_producao
+from aka_title 
+inner join 
+movie_companies on aka_title.movie_id = movie_companies.movie_id 
+inner join
+kind_type on aka_title.kind_id = kind_type.id
+inner join
+company_name on movie_companies.company_id = company_name.id
+inner join
+company_type on movie_companies.company_type_id = company_type.id;
+
+3 - Criação do Dashboard no Tableau Public com a view anterior
+
+4 - Criação do Projeto em Angular
+
+5 - Envio do projeto para o GitHub
+
+
 # Angulartableau
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
