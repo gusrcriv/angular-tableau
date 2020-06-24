@@ -1,5 +1,5 @@
 # ETAPAS DA REALIZAÇÃO DO PROJETO
-1 - Dados importados para o Postgre
+1 - Dados importados para o Postgre (fonte: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/2QYZBT)
 
 2 - Criação da view :
 create view 
